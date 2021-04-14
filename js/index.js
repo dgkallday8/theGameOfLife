@@ -33,6 +33,7 @@
         for(let i = 0; i < numberOfCells; i++) {
             for(let j = 0; j < numberOfCells; j++) {
                 if (field[j][i] === 1) {
+                    ctx.fillStyle = 'rgba(57, 96, 201, 0.5)'
                     ctx.fillRect(i * cellSize, j * cellSize, cellSize, cellSize)
                 }
             }
