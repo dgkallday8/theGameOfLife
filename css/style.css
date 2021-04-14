@@ -7,8 +7,15 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 100Vh;
+    background: linear-gradient(#c6e4ee 0%, #c6e4ee 40%, #fed1ae 60%, #faa0b9 70%, #cb7dcb 80%, #757ecb 100%);
 }
+
 .canvas {
     margin-top: 10px;
-    background-color: rgb(225, 245, 136);
+    background-color: rgba(165, 230, 235, 0.4);
+    border: 4px solid black;
+}
+.panel {
+    margin-top: 10px;
 }

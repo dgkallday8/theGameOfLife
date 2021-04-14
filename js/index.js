@@ -73,10 +73,10 @@
     startBtn.onclick = () => {
         startLife()
     }
-    clearBtn.onclick = () => {
-        drawTheFieldWithZeros()
-    }
     stopBtn.onclick = () => {
         clearTimeout(gameBegin)
     }
+    // clearBtn.onclick = () => {
+        // drawTheFieldWithZeros()
+    // }
 })()
