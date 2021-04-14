@@ -1,4 +1,4 @@
-
+https://dgkallday8.github.io/theGameOfLife
 Игра - Симулятор жизни
 Правила игры сводятся к следующему:
 
