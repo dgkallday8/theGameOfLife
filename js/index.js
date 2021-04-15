@@ -70,14 +70,30 @@
     const startBtn = document.getElementById('start')
     const clearBtn = document.getElementById('clear')
     const stopBtn = document.getElementById('stop')
+    const randomBtn = document.getElementById('random')
+
 
     startBtn.onclick = () => {
         startLife()
+        startBtn.setAttribute('disabled', 'disabled')
+
     }
     stopBtn.onclick = () => {
         clearTimeout(gameBegin)
+        startBtn.removeAttribute('disabled')
     }
-    // clearBtn.onclick = () => {
-        // drawTheFieldWithZeros()
-    // }
+    randomBtn.onclick = () => {
+        ctx.clearRect(0, 0, sizeField, sizeField)
+        for (let i = 0; i < numberOfCells; i++) {
+            field[i] = []
+            for (let j = 0; j < numberOfCells; j ++) {
+                field[i][j] = Math.floor(Math.random() * 2)
+            }
+        }
+        paintCell()
+    }
+    clearBtn.onclick = () => {
+        ctx.clearRect(0, 0, sizeField, sizeField)
+        drawTheFieldWithZeros()
+    }
 })()

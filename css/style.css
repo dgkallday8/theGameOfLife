@@ -14,14 +14,40 @@ body {
 .canvas {
     margin-top: 10px;
     background-color: rgba(165, 230, 235, 0.4);
-    border: 4px solid rgba(57, 96, 201, 0.5);
+    border: 1px solid rgba(57, 96, 201, 0.5);
+    border-radius: 2px;
 }
 .panel {
     margin-top: 10px;
 }
 .title {
-    font-size: 44px;
+    font-size: 36px;
     background: -webkit-linear-gradient(rgba(57, 96, 201, 0.5), rgba(65, 189, 40, 0.5));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    color: rgba(57, 96, 201, 1);
+    background: rgba(165, 230, 235, 0.4);
+    outline: none;
+    border: 1px solid rgba(57, 96, 201, 0.5);
+    transition: background, color ease-in-out .5s;
+}
+
+.btn:active {
+    background: rgba(165, 230, 235, 1);
+}
+.btn:hover {
+    cursor: pointer;
+    color: #fff;
+    box-shadow: inset 0 0 3px 1px;
+}
+.btn[disabled="disabled"] {
+    background-color: #ccc;
+    cursor: default;
+    box-shadow: none;
 }
